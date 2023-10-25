@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Paul Carey, HTML, CSS">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+    <link rel="formval" href="./javascript/form-validation.js">
+  <link rel="scriptsheet" href="./javascript/script.js">
+  <title>Paul's Website</title>
+</head>
+
+<body class="bodystyle">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <!-- <script src="script.js" crossorigin="anonymous"></script> -->
+ <nav class="navbar" style="background-color: lightblue">
+  <a href="https://www.linkedin.com/in/paul-carey-23656b34" target="_blank">
+    <img class="hover-picture fade-in" src="./images/icons8-linkedin-rodeado-de-círculo-30.png" alt="LinkedIn Logo"></a>
+    
+    <div class="nav-menu">
+        <a class="active" href="./index.html">Home</a>
+        <a href="./work-history.html">Work History</a>
+        <a href="./projects.html">Projects</a>
+    </div>
+</nav>
+
+
+  <header class="headerstyle">
+    <br>
+    <h1 class="main-headings">Paul Carey: Work History</h1><br>
+    <img class="fade-in me hover-picture" src="./images/me (3).jpg" alt="Picture of me"><br><br>
+    <p> Below you'll find my work history. </p>
+  </header>
+  <h2>Work History</h2>
+  <div class="row wrapper">
+    <div class="col-12 col-md-4">
+      <h3 class="workheaders">Six Flags</h3><img class="fade-in sixflags-logo hover-picture" src="./images/sixflags.jpg" alt="six flags logo"><br>
+      <p class="jobinfo">I worked at Six Flags Great America in Gurnee, IL as a food service worker during the summer of Sophmore and Junior year of highschool.</p>
+    </div>
+    <div class="col-12 col-md-4">
+      <h3 class="workheaders">Cherry Hill Programs</h3><img class="fade-in noerr-img hover-picture" src="./images/noerr.jpg" alt="noerr programs logo"><br>
+      <p class="jobinfo">I worked for Cherry Hill Programs in Gurnee, IL, a photography company that partnered with Simon Malls during the Christmas and Easter seasons. Yes, I was the Easter bunny and it was hot in the bunny suit &#128517</p>
+    </div>
+    <div class="col-12 col-md-4">
+      <h3 class="workheaders">Amazon</h3><img class=" fade-in work-logo hover-picture" src="./images/amazon.jpg" alt="amazon logo"><br>
+      <p class="jobinfo">I currently work at Amazon. I started in 2014 as a In-House Temporary Associate at MKE5 (Sort Center) in Kenosha, WI. In 2015, MKE1 (AR Sortable) opened nextdoor where I was a ICQA Problem Solver and Counter. In 2017, I was promoted to an ICQA Data Analyst at SMF1 (AR Sortable) in Sacramento, CA. In 2019, I helped launch LAS7 (AR Sortable) in Las Vegas, NV. About a year later, I was approached to help launch LAS1 (IXD) in Henderson, NV. Within 6 months, I was promoted to ICQA Program Developer. Presently, I am working out of LAS1, but my IXD+ Central Developer Team is scattered across the country. I build queries and Quicksights for directors and underperforming buildings and regions across the IXD+ Network.</p>
+    </div>
+  </div>
+   
+  <footer class="footerstyle">
+    <h3>Have a Question?</h3>
+        <!--Modal Addition Start-->
+    <button id="myModalButton">Click Here to Send Email</button>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+      <span class="close">&times;</span>
+        <h4>Send me an email by filling out the below form:</h4>
+      <p>
+      <div id="form-submitted-msg">Form successfully submitted!</div>
+      <!-- <form id ="exampleForm" action="/example_action.html" novalidate> -->
+      <form id ="exampleForm" novalidate>
+
+        <div class="input-group">
+          <label for="firstName" class="form-label">First name: </label>
+          <input type="text" id="firstName" name="firstName" class="form-control" required>
+          <small class="error-msg invalid-feedback">First Name is Required</small>
+        </div>
+
+        <div class="input-group">
+          <label for="lastName" class="form-label">Last name: </label>
+          <input type="text" id="lastName" name="lastName" class="form-control" required>
+          <small class="error-msg invalid-feedback">Last Name is Required</small>
+        </div>
+
+        <div class="input-group">
+          <label for="email" class="form-label">Email: </label>
+          <input type="email" id="email" name="email" class="form-control" required>
+          <small class="error-msg invalid-feedback">Email is Required</small>
+        </div>
+
+        <div class="input-group">
+          <label for="question" class="form-label">Question: </label>
+          <textarea id="textareastyle" name="textarea" class="form-control" rows="5" cols="20" required></textarea>
+          <small class="error-msg invalid-feedback">Text is Required</small>
+        </div>
+
+        <div class="form-buttons">
+          <button type="submit" id="uservalform" class="hover-button primary submit" disabled>Send Email</button>
+          <button type="reset" class="hover-button secondary">Clear</button>
+          <br>
+        </div>
+      </form>
+      </div>
+      </div>
+    </div>
+  <!--Modal Addition End-->
+  <script src="./javascript/form-validation.js"></script>
+  <script src="./javascript/script.js"></script>
+
+  </footer> 
+  
+  <p>Connect with me on LinkedIn!</p>
+  <a href="https://www.linkedin.com/in/paul-carey-23656b34" target="_blank">
+    <img class="hover-picture fade-in" src="./images/icons8-linkedin-rodeado-de-círculo-30.png" alt="LinkedIn Logo"></a>
+</body>
+
+</html>
