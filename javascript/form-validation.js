@@ -50,8 +50,8 @@ const handleChange = () => {
           && element.type !== 'checkbox'
           && element.type !== 'radio'
     ) {
-      element.style.borderColor = '#CED4DA'
-      element.nextElementSibling.style.color = '#CED4DA'
+      element.style.borderColor = 'blue'
+      element.nextElementSibling.style.color = 'blue'
       element.nextElementSibling.style.display = 'none'
       element.previousElementSibling.style.color = '#212529'
     }
@@ -70,7 +70,7 @@ const handleChange = () => {
           && (element.type === 'checkbox'
               || element.type === 'radio')
     ) {
-      element.style.borderColor = '#CED4DA'
+      element.style.borderColor = 'blue'
       element.nextElementSibling.style.color = '#212529'
     }
 
@@ -88,8 +88,8 @@ const handleChange = () => {
     if (element.nodeName === 'SELECT'
           && element.value !== 'Please select an option'
     ) {
-      element.style.borderColor = '#CED4DA'
-      element.nextElementSibling.style.color = '#CED4DA'
+      element.style.borderColor = 'blue'
+      element.nextElementSibling.style.color = 'blue'
       element.nextElementSibling.style.display = 'none'
       element.previousElementSibling.style.color = '#212529'
     }
@@ -130,22 +130,22 @@ formElements.forEach((element) => {
 formval.addEventListener('submit', (e) => handleSubmit(e))
 
 //CLEAR FULL FORM
-// const handleClear = (e) => {
+const handleClear = (e) => {
   // Prevent the default form submission behavior
-  // e.preventDefault()
-
-  // If all form elements are valid after the form submission, display a success message, reset the form, and disable the submit button
-  // if (allInputsValid()) {
-    // successMessage.style.display = 'block'
-    // formval.reset();
-    // resetButton.removeAttribute('disabled', '')
-    // submitButton.setAttribute('disabled', '')
-
-    // Hide the success message after 3 seconds
-    // setTimeout(() => {
-      // successMessage.style.display = 'none'
-    // }, 3000)
-  // }
-// }
-formval.addEventListener('reset', formval.reset())
+    //e.preventDefault()
+    formElements.forEach((element) => {
+    if (!element.checkValidity()
+          && element.nodeName !== 'BUTTON'
+          && element.nodeName !== 'SELECT'
+          && element.type !== 'checkbox'
+          && element.type !== 'radio'
+    ) {
+      element.style.borderColor = 'blue'
+      element.nextElementSibling.style.color = 'blue'
+      element.nextElementSibling.style.display = 'none'
+      element.previousElementSibling.style.color = '#212529'
+    }})
+    formval.reset()
+}
+formval.addEventListener('reset', (e) => handleClear(e))
 

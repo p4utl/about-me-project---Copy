@@ -73,6 +73,15 @@
   box-shadow: 1px 1px blue;
 }
 
+.project-5-picture {
+  width: 80px;
+  height: 75px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  box-shadow: 1px 1px blue;
+}
+
 .me {
   box-shadow: 5px 5px blue;
   max-height: 150px;
@@ -149,6 +158,7 @@ h2 {
   border: 1px solid blue;
   width: 80%;
 }
+
 
 .close {
   color: black;
