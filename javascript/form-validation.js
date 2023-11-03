@@ -149,3 +149,8 @@ const handleClear = (e) => {
 }
 formval.addEventListener('reset', (e) => handleClear(e))
 
+//clear address input
+//added it here, because its about filling out something and clearing, may be better in another location but this made sense to me
+function clearAddress() {
+  document.getElementById('address').value = '';
+}

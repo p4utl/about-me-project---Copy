@@ -36,16 +36,25 @@
   <h2>What I've learned so far</h2>
   <p>So far I've learned HTML and basic and intermediate to advanced CSS. I also learned bootstrap, which is used in this website!! I code for a living, whether it be with VBA, SQL, or a little bit of Python and Java. This isn't the first time I've tried learning HTML and CSS, I usually start to struggle and give up but so far I'm liking this course and its teaching style. I'm excited to keep learning and growing my Web Development Skills! <br>
   </p>
-
+<!-- Added a title section -->
   <h2>Where am I located?</h2>
+  <!-- Added abit of an explanation -->
   <p>I currently live in Las Vegas, NV!<br></p>
-  <p>Insert Map Here</p>
+  <!-- Added a div where the map would go, added an id so i can call the styling in the CSS -->
   <div id="map"></div>
+  <br>
+  <!-- Added a paragrah to let people know what the iput box was in the below section -->
+  <p>Try to find where you live below</p>
     <div>
+      <!-- added a input field for address, submit button and reset button.
+      When clicking the search address button, it will call the js getCoordinates function
+      When Clicking the clear address buttton, it will call the js clearAddress function -->
       <input id="address" type="textbox">
-      <input type="button" value="Search Address" onclick="getCoordinates()">
+      <input type="submit" value="Search Address" onclick="getCoordinates()"/>
+      <input type="reset" value="Clear Address" onclick="clearAddress()"/>
     </div>
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY_HERE&callback=initMap&v=weekly"defer></script>
+    <!-- Input your API Below (replace: INSERT_YOUR_API_KEY_HERE); this is where the google maps will work-->
+  <script src="https://maps.googleapis.com/maps/api/js?key=INSERT_YOUR_API_KEY_HERE&callback=initMap&v=weekly"defer></script>
   <footer class="footerstyle">
     <h3>Have a Question?</h3>
     <!--Modal Addition Start-->

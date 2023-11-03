@@ -234,10 +234,16 @@ input {
 /* Age Calculator End */
 
 /* Adding Map Styling Start */
+/* Added Width and Height for map */
+/* Added margins and display block to be able to center */
+/* added solid blue border */
 #map {
-  width: 600px;
-  height: 400px;
-  display: flex;
+  width: 800px;
+  height: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  border: 3px solid blue;
 }
 /* Adding Map Styling End */
 
