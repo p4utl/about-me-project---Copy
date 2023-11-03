@@ -237,7 +237,7 @@ input {
 #map {
   width: 600px;
   height: 400px;
-  text-align: center;
+  display: flex;
 }
 /* Adding Map Styling End */
 
