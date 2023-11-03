@@ -233,6 +233,13 @@ input {
 }
 /* Age Calculator End */
 
+/* Adding Map Styling Start */
+#map {
+  width: 600px;
+  height: 400px;
+}
+/* Adding Map Styling End */
+
 /* #exampleForm {
   width: 40%;
   text-align: center;
